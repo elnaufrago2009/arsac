@@ -1,4 +1,39 @@
-== Welcome to Rails
+== Sistema Arsac
+
+Inicio del desarrollo del sistema arsac.
+
+Desarrolladores:
+1. Jose Pelaes
+2. Abraham Linares O.
+
+
+En Construccion....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Rails is a web-application framework that includes everything needed to create
 database-backed web applications according to the Model-View-Control pattern.
