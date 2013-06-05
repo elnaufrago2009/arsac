@@ -1,5 +1,16 @@
 class ApplicationController < ActionController::Base
   #protect_from_forgery
+
+
+  before_filter :initialize_support
+
+  def initialize_support
+    @web_nombre		= 	"ARSAC"
+    @web_subtitle 	= 	"Sistema en Construccion, Empresa Arsac Contratistas Generales."
+    @web_footer 	= 	'Arsac 2013'
+  end
+
+
   def after_sign_in_path_for(resource)
     #'/admin'
     '/'

@@ -1,0 +1,31 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="/"><%= @web_nombre %></a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="/pruebas">Paginas</a></li>
+          <li><a href="#about">Aboutt</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class ="pull-right">
+          <ul class="nav">
+            <% if user_signed_in? %>
+                <li>
+                  <%= link_to raw("<i class='icon-user icon-white'></i> #{current_user.email}, Salir  "), destroy_user_session_path, :method => :delete %>
+                </li>
+            <% else %>
+                <li><a href="/users/sign_in"><i class="icon-user icon-white"></i> Login</a></li>
+            <% end %>
+          </ul>
+        </div>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>

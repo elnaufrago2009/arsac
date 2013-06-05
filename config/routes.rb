@@ -1,4 +1,7 @@
-Arsac::Application.routes.draw do
+Arsac::Application.routes.draw do  get "pruebas/particular"
+  resources :pruebas
+
+
   devise_for :users
 
   # The priority is based upon order of creation:
