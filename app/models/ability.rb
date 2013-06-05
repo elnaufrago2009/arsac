@@ -15,7 +15,7 @@ class Ability
       can [:read], [Inscripcione]
     else
       can [:index], [Prueba]
-      can [:read], [Prueba]
+      can [:read ], [Prueba]
     end
 
 
